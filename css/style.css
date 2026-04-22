@@ -1,0 +1,35 @@
+/* Кастомный скролл */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #5838FC; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #4325e6; }
+
+.bg-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+.bg-pattern {
+    background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="2" cy="2" r="2" fill="%23f0f0f0"/%3E%3C/svg%3E');
+}
+/* Плавный скролл */
+html {
+    scroll-behavior: smooth;
+}
+/* Модальное окно */
+.modal-overlay {
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+}
+.heart-active {
+    color: #ef4444 !important;
+}
+
+/* Вспомогательные классы для модалок */
+.visible { visibility: visible !important; }
+.invisible { visibility: hidden !important; }
+.opacity-100 { opacity: 1 !important; }
+.opacity-0 { opacity: 0 !important; }
+.scale-100 { transform: scale(1) !important; }
+.scale-95 { transform: scale(0.95) !important; }
+#loginModal .transform, #searchModal .transform { transition: transform 0.3s ease; }
