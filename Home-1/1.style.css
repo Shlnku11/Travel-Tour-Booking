@@ -1,0 +1,82 @@
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./img/пляж\ с\ лодкой\ и\ городом.png');
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+}
+
+.tour-card {
+    transition: all 0.3s ease;
+    border-radius: 24px;
+    overflow: hidden;
+    background: white;
+}
+
+.bg-accent {
+    background-color: #6624FF;
+}
+
+.tour-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.badge-purple {
+    background: linear-gradient(90deg, #612af5 0%, #4b1ecc 100%);
+}
+
+.price-tag {
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    width: fit-content;
+}
+
+.bilet{
+    background-color: #071952;
+}
+
+.active-tab {
+    color: #612af5;
+    position: relative;
+}
+
+.active-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #612af5;
+}
+
+.purple-gradient {
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+}
+
+.purple-gradient_228 {
+    background: url("./img/Download.png") no-repeat;
+    width: 1226px;
+    height: 241px;
+}
+
+.bg-footer {
+    background: url('./img/footer.png');
+}
+
+.text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+    font-size: 12rem;
+    position: absolute;
+    z-index: -1;
+}
