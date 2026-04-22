@@ -1,0 +1,41 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F8F9FF;
+    overflow-x: hidden;
+}
+
+.hero-bg {
+    width: 1920px;
+    height: 735px;
+    background: url('./img/PlaneB.jpg');
+}
+.hero1-bg {
+    width: 1920px;
+    height: 368px;
+    background: url('./img/PlaneB.jpg');
+}
+
+.text-accent {
+    color: #6624FF; 
+}
+
+.bilet{
+    background-color: #071952;
+}
+
+.bg-accent {
+    background-color: #6624FF;
+}
+
+.bg-orange-brand {
+    background-color: #FD562E;
+}
+
+.footer-bg {
+    background-color: #0B0121;
+}
+
+.glass-badge {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+}

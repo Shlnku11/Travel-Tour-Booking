@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travox - Explore New Places</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./5.style.css">
+</head>
+
+<body class="text-gray-600 antialiased">
+
+    <section class="hero-bg relative w-[1920px] h-[800px] text-white flex flex-col justify-between">
+        <div class="absolute inset-0 overflow-hidden pointer-events-none"></div>
+
+        <header class="container mx-auto max-w-[1440px] px-6 py-8 flex justify-between items-center relative z-20">
+            <div class="flex items-center gap-3">
+                <img src="./img/logo.png" alt="Travox" class="h-8">
+                <span class="text-3xl font-extrabold tracking-tight">Travox</span>
+            </div>
+            <nav class="hidden lg:flex items-center gap-10 font-medium text-[15px]">
+                <a href="#" class="hover:text-gray-200">Home <i data-lucide="chevron-down" class="inline w-4"></i></a>
+                <a href="#" class="hover:text-gray-200">Features <i data-lucide="chevron-down"
+                        class="inline w-4"></i></a>
+                <a href="#" class="hover:text-gray-200">Pages <i data-lucide="chevron-down" class="inline w-4"></i></a>
+                <a href="#" class="hover:text-gray-200">Blogs <i data-lucide="chevron-down" class="inline w-4"></i></a>
+                <a href="#" class="hover:text-gray-200">Contact</a>
+            </nav>
+            <div class="flex items-center gap-6">
+                <button><i data-lucide="search" class="w-5 h-5"></i></button>
+                <button class="relative"><i data-lucide="shopping-cart" class="w-5 h-5"></i><span
+                        class="absolute -top-2 -right-2 bg-orange-brand text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span></button>
+                <button><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </header>
+
+        <div class="container absolute bottom-[330px] mx-auto max-w-[1440px] px-6 text-center relative z-20 mt-10">
+            <p class="uppercase tracking-[0.3em] font-bold text-[34px] mb-4">Explore New Places</p>
+            <h1 class="text-[72px] font-extrabold leading-tight mb-20">Discover Your Next Adventure</h1>
+        </div>
+
+        <div
+            class="absolute bottom-[250px] left-1/2 -translate-x-1/2 w-full max-w-[1200px] bg-white rounded-[20px] shadow-2xl p-4 flex flex-wrap lg:flex-nowrap items-center gap-4 z-30">
+            <div class="flex-1 px-6 border-r border-gray-100">
+                <label
+                    class="block text-[11px] text-gray-400 font-bold uppercase tracking-wider mb-1">Destinations:</label>
+                <div class="flex items-center gap-2">
+                    <input type="text" placeholder="Where are you going?"
+                        class="w-full text-[#0B0121] font-bold focus:outline-none">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex-1 px-6 border-r border-gray-100">
+                <label class="block text-[11px] text-gray-400 font-bold uppercase tracking-wider mb-1">Check In:</label>
+                <div class="flex items-center gap-2">
+                    <input type="text" placeholder="12.10" class="w-full text-[#0B0121] font-bold focus:outline-none">
+                    <i data-lucide="calendar" class="w-4 h-4 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex-1 px-6 border-r border-gray-100">
+                <label class="block text-[11px] text-gray-400 font-bold uppercase tracking-wider mb-1">Check
+                    Out:</label>
+                <div class="flex items-center gap-2">
+                    <input type="text" placeholder="12.10" class="w-full text-[#0B0121] font-bold focus:outline-none">
+                    <i data-lucide="calendar" class="w-4 h-4 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex-1 px-6 border-r border-gray-100">
+                <label class="block text-[11px] text-gray-400 font-bold uppercase tracking-wider mb-1">Guest:</label>
+                <div class="flex items-center gap-2">
+                    <input type="text" placeholder="Add Guests"
+                        class="w-full text-[#0B0121] font-bold focus:outline-none">
+                    <i data-lucide="user" class="w-4 h-4 text-gray-400"></i>
+                </div>
+            </div>
+            <button
+                class="bg-orange-brand text-white px-12 py-5 rounded-2xl font-bold text-lg hover:bg-[#E04B25] transition-colors w-full lg:w-auto">
+                Search <i data-lucide="search" class="inline w-4 ml-2"></i>
+            </button>
+        </div>
+    </section>
+
+    <div class="h-32"></div>
+
+    <section class="container mx-auto max-w-[1440px] px-6 py-16 relative">
+        <img src="./img/eiffel-outline.svg" class="absolute -left-20 top-0 opacity-10 h-full pointer-events-none">
+
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <p class="text-accent text-sm font-bold uppercase tracking-widest mb-2">Next Adventure Destination</p>
+                <h2 class="text-[44px] font-extrabold text-[#0B0121] leading-tight">Popular Travel Destinations <br>
+                    Available Worldwide</h2>
+            </div>
+            <button
+                class="text-accent font-bold text-sm bg-purple-50 px-6 py-3 rounded-full hover:bg-purple-100 transition-colors">
+                ALL LOCATIONS <i data-lucide="arrow-right" class="inline w-4 ml-1"></i>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group relative h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-lg">
+                <img src="./img/France.png"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0B0121]/90"></div>
+                <div class="absolute bottom-8 left-0 w-full text-center text-white">
+                    <span class="bg-accent text-xs font-bold px-4 py-1.5 rounded-full inline-block mb-3">1 Tour</span>
+                    <h3 class="text-3xl font-extrabold">Paris</h3>
+                </div>
+            </div>
+            <div class="group relative h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-lg">
+                <img src="./img/Italy.png"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0B0121]/90"></div>
+                <div class="absolute bottom-8 left-0 w-full text-center text-white">
+                    <span class="bg-accent text-xs font-bold px-4 py-1.5 rounded-full inline-block mb-3">1 Tour</span>
+                    <h3 class="text-3xl font-extrabold">Rome</h3>
+                </div>
+            </div>
+            <div class="group relative h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-lg">
+                <img src="./img/UK.png"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0B0121]/90"></div>
+                <div class="absolute bottom-8 left-0 w-full text-center text-white">
+                    <span class="bg-accent text-xs font-bold px-4 py-1.5 rounded-full inline-block mb-3">2 Tours</span>
+                    <h3 class="text-3xl font-extrabold">New York City</h3>
+                </div>
+            </div>
+            <div class="group relative h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-lg">
+                <img src="./img/Japan.png"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0B0121]/90"></div>
+                <div class="absolute bottom-8 left-0 w-full text-center text-white">
+                    <span class="bg-accent text-xs font-bold px-4 py-1.5 rounded-full inline-block mb-3">2 Tours</span>
+                    <h3 class="text-3xl font-extrabold">Tokyo</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto max-w-[1440px] px-6 py-12">
+        <div class="rounded-[40px] overflow-hidden flex flex-col lg:flex-row shadow-xl">
+            <div
+                class="bilet text-white p-16 lg:w-[40%] flex flex-col justify-center items-start relative overflow-hidden">
+                <div class="absolute -top-20 -left-20 w-64 h-64 bg-accent/20 rounded-full blur-3xl pointer-events-none">
+                </div>
+                <p class="text-gray-300 font-bold mb-2">Enjoy Summer Deals</p>
+                <h3 class="text-[40px] font-extrabold leading-tight mb-8">Up to 40% Discount!</h3>
+                <button
+                    class="bg-accent text-white px-8 py-3.5 rounded-full font-bold hover:bg-[#5013EB] transition-colors">SEE
+                    DETAILS <i data-lucide="arrow-right" class="inline w-4 ml-1"></i></button>
+            </div>
+            <div class="relative lg:w-[60%] h-[350px] lg:h-auto">
+                <img src="./img/ostrov s krylom.png" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/20 flex flex-col justify-center items-center text-center">
+                    <p class="text-white text-4xl lg:text-[56px] font-extrabold drop-shadow-lg leading-tight">Let's
+                        Discover <br> The Whole World !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto max-w-[1440px] px-6 py-24 flex flex-col lg:flex-row items-center gap-20">
+        <div class="lg:w-1/2 relative h-[600px] w-full flex items-center justify-center">
+            <img src="./img/Kompas.png"
+                class="absolute top-0 left-10 w-32 animate-[spin_20s_linear_infinite] opacity-60 z-20">
+            <img src="./img/Parocha2.png"
+                class="absolute left-0 top-1/4 w-[300px] h-[380px] object-cover rounded-[30px] border-8 border-white shadow-2xl -rotate-6 z-10">
+            <img src="./img/Gory.png"
+                class="absolute right-0 w-[420px] h-[520px] object-cover rounded-[30px] border-8 border-white shadow-2xl z-20">
+        </div>
+
+        <div class="lg:w-1/2">
+            <p class="text-accent text-sm font-bold uppercase tracking-widest mb-3">Dream Your Next Trip</p>
+            <h2 class="text-[48px] font-extrabold text-[#0B0121] leading-tight mb-6">Discover When Even <br> You Want To
+                Go</h2>
+            <p class="text-gray-500 text-[16px] leading-relaxed mb-10 max-w-lg">
+                Are You Tired Of The Typical Tourist Destinations And Looking To Step Out Of Your Comfort Zone?
+                Adventure Travel May Be The Perfect Solution For You! Here Are Four.
+            </p>
+
+            <div class="space-y-8 mb-10">
+                <div class="flex gap-5">
+                    <div class="w-16 h-16 rounded-full bg-purple-50 flex items-center justify-center shrink-0">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-accent"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-[#0B0121] mb-2">Best Travel Agency</h4>
+                        <p class="text-gray-500 text-sm">Are you tired of the typical tourist destinatio and looking
+                            step out of your comfort.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="w-16 h-16 rounded-full bg-purple-50 flex items-center justify-center shrink-0">
+                        <i data-lucide="lock" class="w-8 h-8 text-accent"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-[#0B0121] mb-2">Secure Journey With Us</h4>
+                        <p class="text-gray-500 text-sm">Are you tired of the typical tourist destinatio and looking
+                            step out of your comfort.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button
+                class="bg-accent text-white px-10 py-4 rounded-full font-bold hover:bg-[#5013EB] transition-colors shadow-lg shadow-purple-500/30">
+                BOOK YOUR TRIP <i data-lucide="arrow-right" class="inline w-4 ml-2"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="border-y border-gray-200 py-12 mb-24">
+        <div class="container mx-auto max-w-[1200px] px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex items-center gap-4 justify-center">
+                <i data-lucide="users" class="w-12 h-12 text-accent"></i>
+                <span class="text-2xl font-bold text-[#0B0121]">Happy Clients</span>
+            </div>
+            <div class="flex items-center gap-4 justify-center">
+                <i data-lucide="globe" class="w-12 h-12 text-accent"></i>
+                <span class="text-2xl font-bold text-[#0B0121]">Country Tour</span>
+            </div>
+            <div class="flex items-center gap-4 justify-center">
+                <i data-lucide="award" class="w-12 h-12 text-accent"></i>
+                <span class="text-2xl font-bold text-[#0B0121]">Tourism Award</span>
+            </div>
+            <div class="flex items-center gap-4 justify-center">
+                <i data-lucide="headphones" class="w-12 h-12 text-accent"></i>
+                <span class="text-2xl font-bold text-[#0B0121]">Skilled Support</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto max-w-[1440px] px-6 py-12 bg-white rounded-[40px] shadow-sm relative">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <p class="text-accent text-sm font-bold uppercase tracking-widest mb-2">Most Popular Tour Packages</p>
+                <h2 class="text-[44px] font-extrabold text-[#0B0121]">Our Popular Tours</h2>
+            </div>
+            <button class="text-accent font-bold text-sm bg-purple-50 px-6 py-3 rounded-full hover:bg-purple-100">
+                SEE ALL DEAL <i data-lucide="arrow-right" class="inline w-4 ml-1"></i>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="tour-card shadow-sm border border-gray-100">
+            <div class="relative h-56">
+                <img src="./img/Dom1.png" class="w-full h-full object-cover">
+                <div class="absolute top-4 left-0 bg-orange-500 text-white text-[10px] font-bold px-4 py-1 rounded-r-full">Featured</div>
+                <button class="absolute top-4 right-4 bg-white/90 p-2 rounded-full hover:bg-white"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="p-5">
+                <h3 class="font-bold text-[#0d0620] text-sm mb-3">Two Hour Walking Tour Of Manhattan</h3>
+                <div class="space-y-2 mb-6">
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 51 Dekor Land, Thailand</p>
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 4 Days</p>
+                </div>
+                <div class="flex justify-between items-center border-t pt-4">
+                    <div class="badge-purple price-tag px-6 py-2 text-white font-bold text-lg">$13.00</div>
+                    <div class="flex items-center gap-1 text-[11px] font-semibold">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#fb923c" stroke="#fb923c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <span class="text-black-400">(1 Review)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour-card shadow-sm border border-gray-100">
+            <div class="relative h-56">
+                <img src="./img/Dom2.png" class="w-full h-full object-cover">
+                <div class="absolute top-4 left-0 bg-orange-500 text-white text-[10px] font-bold px-4 py-1 rounded-r-full">Featured</div>
+                <button class="absolute top-4 right-4 bg-white/90 p-2 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="p-5">
+                <h3 class="font-bold text-[#0d0620] text-sm mb-3">American Parks Trail End Rapid City Express</h3>
+                <div class="space-y-2 mb-6">
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 51 Dekor Land, Thailand</p>
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 4 Days</p>
+                </div>
+                <div class="flex justify-between items-center border-t pt-4">
+                    <div class="badge-purple price-tag px-6 py-2 text-white font-bold text-lg">$20.00</div>
+                    <div class="flex items-center gap-1 text-[11px] font-semibold">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#cbd5e1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <span class="text-black-400">(0 Review)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour-card shadow-sm border border-gray-100">
+            <div class="relative h-56">
+                <img src="./img/Dom3.png" class="w-full h-full object-cover">
+                <div class="absolute top-4 left-0 bg-orange-500 text-white text-[10px] font-bold px-4 py-1 rounded-r-full">Featured</div>
+                <button class="absolute top-4 right-4 bg-white/90 p-2 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="p-5">
+                <h3 class="font-bold text-[#0d0620] text-sm mb-3">Modern Stefano La Piazze
+Wergeland</h3>
+                <div class="space-y-2 mb-6">
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Veins City, italy</p>
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 7 Days</p>
+                </div>
+                <div class="flex justify-between items-center border-t pt-4">
+                    <div class="flex flex-col">
+                        <div class="badge-purple price-tag px-6 py-1 text-white font-bold text-lg">$40.00</div>
+                    </div>
+                    <div class="flex items-center gap-1 text-[11px] font-semibold text-black-400">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#cbd5e1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> (0 Review)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour-card shadow-sm border border-gray-100">
+            <div class="relative h-56">
+                <img src="./img/Dom4.png" class="w-full h-full object-cover">
+                <div class="absolute top-4 left-0 bg-red-500 text-white text-[10px] font-bold px-4 py-1 rounded-r-full">Sale Offer</div>
+                <button class="absolute top-4 right-4 bg-white/90 p-2 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="p-5">
+                <h3 class="font-bold text-[#0d0620] text-sm mb-3">Vatican Museums, Sistine
+Chapel Skip the</h3>
+                <div class="space-y-2 mb-6">
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Switzerland city</p>
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 4 Days</p>
+                </div>
+                    <div class="flex justify-between items-center border-t pt-4">
+                    <div class="flex flex-col">
+                        <span class="text-[#612af5] text-[10px] line-through opacity-60">$100.00</span>
+                        <div class="badge-purple price-tag px-6 py-1 text-white font-bold text-lg">$60.00</div>
+                    </div>
+                    <div class="flex items-center gap-1 text-[11px] font-semibold text-black-400">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#cbd5e1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> (0 Review)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tour-card shadow-sm border border-gray-100">
+            <div class="relative h-56">
+                <img src="./img/Dom5.png" class="w-full h-full object-cover">
+                <div class="absolute top-4 left-0 bg-orange-500 text-white text-[10px] font-bold px-4 py-1 rounded-r-full">Featured</div>
+                <button class="absolute top-4 right-4 bg-white/90 p-2 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="p-5">
+                <h3 class="font-bold text-[#0d0620] text-sm mb-3">When You Visit The Eternal Dubai City</h3>
+                <div class="space-y-2 mb-6">
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Dubai, Emirates</p>
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 4 Days</p>
+                </div>
+                <div class="flex justify-between items-center border-t pt-4">
+                    <div class="flex flex-col">
+                        <span class="text-[#612af5] text-[10px] line-through opacity-60">$299.00</span>
+                        <div class="badge-purple price-tag px-6 py-1 text-white font-bold text-lg">$150.00</div>
+                    </div>
+                    <div class="flex items-center gap-1 text-[11px] font-semibold text-black-400">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#cbd5e1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> (0 Review)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tour-card shadow-sm border border-gray-100">
+            <div class="relative h-56">
+                <img src="./img/Dom6.png" class="w-full h-full object-cover">
+                <div class="absolute top-4 left-0 bg-orange-500 text-white text-[10px] font-bold px-4 py-1 rounded-r-full">Featured</div>
+                <button class="absolute top-4 right-4 bg-white/90 p-2 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="p-5">
+                <h3 class="font-bold text-[#0d0620] text-sm mb-3">The Pulau Seribu, Jakarta
+Indonesia</h3>
+                <div class="space-y-2 mb-6">
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 51 Dekor Land, Thailand</p>
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 4 Days</p>
+                </div>
+                <div class="flex justify-between items-center border-t pt-4">
+                    <div class="flex flex-col">
+                        <span class="text-[#612af5] text-[10px] line-through opacity-60">$350.00</span>
+                        <div class="badge-purple price-tag px-6 py-1 text-white font-bold text-lg">$300.00</div>
+                    </div>
+                    <div class="flex items-center gap-1 text-[11px] font-semibold text-black-400">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#cbd5e1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> (0 Review)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tour-card shadow-sm border border-gray-100">
+            <div class="relative h-56">
+                <img src="./img/Dom7.png" class="w-full h-full object-cover">
+                <div class="absolute top-4 left-0 bg-orange-500 text-white text-[10px] font-bold px-4 py-1 rounded-r-full">Featured</div>
+                <button class="absolute top-4 right-4 bg-white/90 p-2 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="p-5">
+                <h3 class="font-bold text-[#0d0620] text-sm mb-3">southwestern Switzerland
+Akam City</h3>
+                <div class="space-y-2 mb-6">
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Switzerland city</p>
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 4 Days</p>
+                </div>
+                <div class="flex justify-between items-center border-t pt-4">
+                    <div class="flex flex-col">
+                        <span class="text-[#612af5] text-[10px] line-through opacity-60">$240.00</span>
+                        <div class="badge-purple price-tag px-6 py-1 text-white font-bold text-lg">$160.00</div>
+                    </div>
+                    <div class="flex items-center gap-1 text-[11px] font-semibold text-black-400">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#cbd5e1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> (0 Review)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tour-card shadow-sm border border-gray-100">
+            <div class="relative h-56">
+                <img src="./img/Dom8.png" class="w-full h-full object-cover">
+                <div class="absolute top-4 left-0 bg-orange-500 text-white text-[10px] font-bold px-4 py-1 rounded-r-full">Featured</div>
+                <button class="absolute top-4 right-4 bg-white/90 p-2 rounded-full"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <div class="p-5">
+                <h3 class="font-bold text-[#0d0620] text-sm mb-3">Win cities on opposite
+sides of the</h3>
+                <div class="space-y-2 mb-6">
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Sydney, Australia</p>
+                    <p class="text-black-400 text-[11px] flex items-center gap-1"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 4 Days</p>
+                </div>
+                <div class="flex justify-between items-center border-t pt-4">
+                    <div class="flex flex-col">
+                        <span class="text-[#612af5] text-[10px] line-through opacity-60">$160.00</span>
+                        <div class="badge-purple price-tag px-6 py-1 text-white font-bold text-lg">$140.00</div>
+                    </div>
+                    <div class="flex items-center gap-1 text-[11px] font-semibold">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="#fb923c" stroke="#fb923c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <span class="text-black-400">(1 Review)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+            <div class="bg-gray-100 h-[208px] rounded-[20px] relative h-40 overflow-hidden flex items-center justify-end p-6">
+                <img src="./img/Parocha3.png" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent"></div>
+                <div class="relative z-10 text-right">
+                    <div
+                        class="bg-accent text-white w-20 h-20 rounded-full flex flex-col items-center justify-center mb-2 mx-auto font-black shadow-lg">
+                        <span class="text-2xl leading-none">12%</span><span class="text-[10px]">Savings</span>
+                    </div>
+                    <button class="bg-accent text-white text-[10px] font-bold px-4 py-1.5 rounded-full">SEE DETAILS <i
+                            data-lucide="arrow-right" class="inline w-3"></i></button>
+                </div>
+            </div>
+
+            <div
+                class="bg-[#EFF4FE] h-[208px] rounded-[20px] relative h-40 overflow-hidden p-8 flex flex-col justify-center items-center text-center border border-[#D5E1FA]">
+                <img src="./img/Krylo.png" class="absolute inset-0 w-full h-full object-cover">
+                <div class="relative z-10">
+                    <p class="text-[#0B0121] text-[10px] font-bold tracking-widest mb-1">STRIKE THE DEAL WITH</p>
+                    <p class="text-[#0B0121] text-[10px] font-bold tracking-widest mb-2">USED PAYMENTS</p>
+                    <h4 class="text-4xl font-black text-accent mb-3 flex items-center justify-center gap-2">5% <span
+                            class="text-[12px] leading-tight text-[#0B0121]">EXTRA <br> DISCOUNT</span></h4>
+                    <button class="bg-gray-900 text-white text-[10px] font-bold px-4 py-1.5 rounded-full">SEE
+                        DETAILS</button>
+                </div>
+            </div>
+
+            <div class="bg-blue-600 h-[208px] rounded-[20px] relative h-40 overflow-hidden flex items-center p-6 text-white">
+                <img src="./img/Parocha4.png" class="absolute inset-0 w-full h-full object-cover">
+                <div class="relative z-10">
+                    <h4 class="text-5xl font-black leading-none mb-1">25%</h4>
+                    <p class="text-xl font-bold leading-none mb-4">EXTRA <br> DISCOUNT</p>
+                    <button class="bg-accent text-white text-[10px] font-bold px-4 py-1.5 rounded-full">SEE DETAILS <i
+                            data-lucide="arrow-right" class="inline w-3"></i></button>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="py-24 text-center">
+        <p class="text-accent text-sm font-bold uppercase tracking-widest mb-3">Clients Feedback About Us</p>
+        <h2 class="text-[40px] font-extrabold text-[#0B0121] mb-4">See Those Lovely Words From Clients</h2>
+        <p class="text-gray-500 max-w-xl mx-auto mb-12">Are You Tired Of The Typical Tourist Destinations And Looking To
+            Step Out Of Your Comfort Zonetravel</p>
+    </section>
+
+    <section class="container mx-auto max-w-[1440px] px-6 py-12">
+        <div class="text-center mb-16">
+            <p class="text-accent text-sm font-bold uppercase tracking-widest mb-3">Blog And Article</p>
+            <h2 class="text-[40px] font-extrabold text-[#0B0121] mb-4">Latest News & Articles</h2>
+            <p class="text-gray-500 max-w-xl mx-auto">Are You Tired Of The Typical Tourist Destinations And Looking To
+                Step Out Of Your Comfort Zonetravel</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bg-white rounded-[30px] overflow-hidden border border-gray-100 shadow-sm group cursor-pointer">
+                <div class="relative h-[400px]">
+                    <img src="./img/1devka.png"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <span
+                        class="absolute bottom-6 left-6 bg-accent text-white text-[10px] font-bold px-4 py-1.5 rounded-full z-10">Spiritual
+                        & Wellness</span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-extrabold text-[#0B0121] mb-6 group-hover:text-accent transition-colors">
+                        Coastal Cruise: Seaside Tours For <br> Beach Buffs</h3>
+                    <div class="flex items-center gap-6 text-[12px] font-bold text-gray-500">
+                        <span class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4 text-accent"></i>
+                            15th Jan, 2025</span>
+                        <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-accent"></i> 4
+                            Min in Read</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+                <div
+                    class="bg-white h-[280px] rounded-[30px] overflow-hidden border border-gray-100 shadow-sm flex flex-col sm:flex-row group cursor-pointer p-4 items-center gap-6">
+                    <img src="./img/2devka.png"
+                        class="w-full sm:w-[262px] h-48 rounded-[20px] object-cover group-hover:opacity-90 transition-opacity">
+                    <div class="py-2 pr-4">
+                        <span
+                            class="bg-accent text-white text-[10px] font-bold px-4 py-1.5 rounded-full inline-block mb-4">Urban
+                            & Culture</span>
+                        <h4
+                            class="text-xl font-extrabold text-[#0B0121] mb-6 group-hover:text-accent transition-colors">
+                            10 Safest Destinations For Solo Female</h4>
+                        <div class="flex items-center gap-6 text-[12px] font-bold text-gray-500">
+                            <span class="flex items-center gap-2"><i data-lucide="calendar"
+                                    class="w-4 h-4 text-accent"></i> 15th Jan, 2025</span>
+                            <span class="flex items-center gap-2"><i data-lucide="clock"
+                                    class="w-4 h-4 text-accent"></i> 10 Min in Read</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white h-[280px] rounded-[30px] overflow-hidden border border-gray-100 shadow-sm flex flex-col sm:flex-row group cursor-pointer p-4 items-center gap-6">
+                    <img src="./img/3devka.png"
+                        class="w-full sm:w-[262px] h-48 rounded-[20px] object-cover group-hover:opacity-90 transition-opacity">
+                    <div class="py-2 pr-4">
+                        <span
+                            class="bg-accent text-white text-[10px] font-bold px-4 py-1.5 rounded-full inline-block mb-4">Polar
+                            & Glacier</span>
+                        <h4
+                            class="text-xl font-extrabold text-[#0B0121] mb-6 group-hover:text-accent transition-colors">
+                            Three Of The Best Day Trips To Make From Francisco</h4>
+                        <div class="flex items-center gap-6 text-[12px] font-bold text-gray-500">
+                            <span class="flex items-center gap-2"><i data-lucide="calendar"
+                                    class="w-4 h-4 text-accent"></i> 15th Jan, 2025</span>
+                            <span class="flex items-center gap-2"><i data-lucide="clock"
+                                    class="w-4 h-4 text-accent"></i> 4 Min in Read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero1-bg py-20 mt-10 relative overflow-hidden">
+        <div
+            class="container mx-auto max-w-[1440px] px-6 flex flex-col md:flex-row items-center justify-center gap-16 relative z-10">
+            <div class="relative w-[500px] ml-[-200px] md:mt-[-50px]">
+                <img src="./img/Parocha5.png" class="w-full top-[50px] drop-shadow-2xl">
+            </div>
+
+            <div class="ml-[500px] text-white max-w-xl text-center md:text-left">
+                <h2 class="text-4xl font-extrabold leading-tight mb-4">Are You Tired Of The Typical <br> Tourist
+                    Destinations And Looking</h2>
+                <p class="opacity-80 mb-8 font-medium">Get 5% off on your first app booking Travel with us</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <button
+                        class="bg-white text-black px-6 py-3 rounded-xl flex items-center gap-3 font-bold hover:bg-gray-100 transition-colors">
+                        <img src="./img/google-play.svg" class="w-6">
+                        <div class="text-left leading-none"><span class="text-[10px] font-normal block">GET IT ON</span>
+                            Google Play</div>
+                    </button>
+                    <button
+                        class="bg-white text-black px-6 py-3 rounded-xl flex items-center gap-3 font-bold hover:bg-gray-100 transition-colors">
+                        <i data-lucide="apple" class="w-6 h-6"></i>
+                        <div class="text-left leading-none"><span class="text-[10px] font-normal block">Download on
+                                the</span> App Store</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="./img/sydney-outline.svg" class="absolute bottom-0 right-10 opacity-20 pointer-events-none w-[400px]">
+    </section>
+
+    <footer class="footer-bg pt-24 pb-12 text-white border-t border-white/10 relative overflow-hidden">
+        <div class="container mx-auto max-w-[1440px] px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10 pb-16 mb-8">
+
+                <div class="col-span-1 md:col-span-1">
+                    <div class="relative flex items-center gap-2 mb-6">
+                        <img src="./img/logo.png" class="h-8">
+                        <p class="text-2xl font-extrabold tracking-tight">Travox</p>
+                        <h6 class="absolute left-[30px]"><br><br>A Travel Agency</h6>
+                    </div>
+                    <p class="text-gray-400 text-[13px] leading-relaxed mb-8">
+                        It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page
+                        When Looking At Its Layout The Point Of Using Lorem Varius Sit Amet Ipsum.
+                    </p>
+                    <div class="flex mb-8">
+                        <input type="text" placeholder="Enter your mail"
+                            class="w-full px-5 py-3 rounded-l-full bg-white text-black focus:outline-none font-medium text-sm">
+                        <button class="bg-accent px-6 py-3 rounded-r-full hover:bg-[#5013EB] transition-colors"><i
+                                data-lucide="arrow-right" class="w-5 h-5"></i></button>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent transition-colors"><i
+                                data-lucide="facebook" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent transition-colors"><i
+                                data-lucide="twitter" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent transition-colors"><i
+                                data-lucide="instagram" class="w-4 h-4"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent transition-colors"><i
+                                data-lucide="linkedin" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-gray-400 text-[14px]">
+                        <li><a href="#" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Services</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Blogs</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Information</h4>
+                    <ul class="space-y-6 text-gray-400 text-[14px]">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-white shrink-0 mt-0.5"></i>
+                            <span>Los Angeles, CA, USA</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-white shrink-0 mt-0.5"></i>
+                            <span>123-343-4444</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="clock" class="w-5 h-5 text-white shrink-0 mt-0.5"></i>
+                            <span>Mon - Sat: 8 Am – 5 Pm, Sunday: CLOSED</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Utility Pages</h4>
+                    <ul class="space-y-4 text-gray-400 text-[14px]">
+                        <li><a href="#" class="hover:text-accent transition-colors">Team</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Shop</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Cart</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Wishlist</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Faq</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="text-center text-gray-500 text-[12px] font-medium">
+                Copyright 2025, Tourex All Rights Reserved.
+            </div>
+        </div>
+        <img src="./img/footer-buildings.svg" class="absolute bottom-0 w-full opacity-5 pointer-events-none">
+    </footer>
+    <script src="./5.main.js"></script>
+</body>
+
+</html>
